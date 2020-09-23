@@ -2,9 +2,18 @@
 <html>
 <head>
 <title>Create an HTML Table</title>
-
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+</style>
 </head>
 <body>
+
 <table style="width:100%">
 <tr>
 <th>First Name</th>
@@ -48,5 +57,40 @@
 <th>October 29</th>
 <th>2000</th>
 </tr>
+
+<table style="width:100%">
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Robert</th>
+<td>Roboto</th>
+<td>5</td>
+</tr>
+<tr>
+<td>Jeff</td>
+<td>Washton</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Joel</td>
+<td>Thumpburg</td>
+<td>15</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>Similarities</td>
+<td>All are born in the 2000s</td>
+<td>None of them are an adult</td>
+</tr>
+</tfoot>
+</table>
+
 </body>
 </html>
