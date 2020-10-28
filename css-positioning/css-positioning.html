@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Positioning</title>
+<style>
+#fixed {
+    position:fixed;
+    top:0;
+    right:750px;
+    width:75px;
+    cursor: all-scroll;
+}
+#relative {
+    position:relative;
+    left:25px;
+    cursor: cell;
+}
+#absolute {
+    position:absolute;
+    top:200px;
+    right:250px;
+    width:100px;
+    height:150px;
+    cursor: -webkit-grab; cursor: grab;
+}
+#overlap-1 {
+    position:absolute;
+    left:0;
+    top:100px;
+    z-index:-1;
+    cursor: no-drop;
+}
+#overlap-2 {
+    position:absolute;
+    left:5px;
+    top:110px;
+    z-index:0;
+    cursor: progress;
+}
+#overlap-3 {
+    position:absolute;
+    left:10px;
+    top:120px;
+    z-index:1;
+    cursor: text;
+}
+body {
+    cursor: crosshair;
+}
+</style>
+</head>
+<body>
+<img src="https://www.frisianmotors.com/wp-content/uploads/2016/11/whatsapp-1-e1508251365525.png" id="fixed">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQz33hzPIeFDYtyFBO0C0yjSLtSLoyuwQbMzQ&usqp=CAU" id="relative">
+<img src="http://russianchicagomag.com/wp-content/uploads/2015/07/Editor_avatar_1438098395-110x110.jpg" id="absolute">
+<img src="https://mazarsusa.com/wp-content/uploads/2018/08/mail-icon.jpg" id="overlap-1">
+<img src="https://mazarsusa.com/wp-content/uploads/2018/08/mail-icon.jpg" id="overlap-2">
+<img src="https://mazarsusa.com/wp-content/uploads/2018/08/mail-icon.jpg" id="overlap-3">
+</body>
+</html>
