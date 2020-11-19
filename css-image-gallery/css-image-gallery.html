@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Gallery</title>
+<style>
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-painting.jpeg">
+            <img src="css-wilderness-painting.jpeg" alt="Wilderness Painting">
+        </a>
+        <div class="desc">Wilderness Painting</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-forest.jpg">
+            <img src="css-wilderness-forest.jpg" alt="Wilderness Forest">
+        </a>
+        <div class="desc">Wilderness Forest</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-valley.jpg">
+            <img src="css-wilderness-valley.jpg" alt="Wilderness Valley">
+        </a>
+        <div class="desc">Wilderness Valley</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-mountains.jpg">
+            <img src="css-wilderness-mountains.jpg" alt="Wilderness Mountains">
+        </a>
+        <div class="desc">Wilderness Mountains</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-painting2.jpeg">
+            <img src="css-wilderness-painting2.jpeg" alt="Wilderness Painting 2">
+        </a>
+        <div class="desc">Wilderness Painting 2</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-rocks.jpg">
+            <img src="css-wilderness-rocks.jpg" alt="Wilderness Rocks">
+        </a>
+        <div class="desc">Wilderness Rocks</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-dunes.jpg">
+            <img src="css-wilderness-dunes.jpg" alt="Wilderness Dunes">
+        </a>
+        <div class="desc">Wilderness Dunes</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="css-wilderness-desert.jpg">
+            <img src="css-wilderness-desert.jpg" alt="Wilderness Desert">
+        </a>
+        <div class="desc">Wilderness Desert</div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
