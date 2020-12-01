@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+
+html {
+    background: url(brickwall.jpeg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.hero-image {
+    background: url(tylerberg.jpeg) no-repeat center;
+    background-size: cover;
+    height: 700px;
+    width: 700px;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    color: white;
+}
+
+#multiplebackgrounds1 {
+    height: 700px;
+    width: 700px;
+    background-image: url(mlgglasses.png), url(stonewalljackson.jpg), url(stonewall.jpg);
+    background-position: 560px 515px, right bottom, left top;
+    background-size: 100px 100px, 150px 200px, auto;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+
+#multiplebackgrounds2 {
+    height: 700px;
+    width: 700px;
+    background: url(mlgglasses.png) 560px 520px no-repeat, url(stonewalljackson.jpg) right bottom no-repeat, url(stonewall.jpg) left top repeat;
+    background-size: 100px, 150px, auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="font-size:50px">Tyler Berg</h1>
+    </div>
+</div>
+<div id="multiplebackgrounds1"></div>
+<div id="multiplebackgrounds2"></div>
+
+</body>
+</html>
